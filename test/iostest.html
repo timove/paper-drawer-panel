@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>paper-drawer-panel-test</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<script>window.Polymer = window.Polymer || {}; window.Polymer.dom = 'shadow';</script>		
+		<script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+		
+		<link rel="import" href="../../polymer/polymer.html">
+		<link rel="import" href="test-element.html">
+		
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#refresh {
+				position: fixed;
+				right: 0;
+				top: 150px;
+				height: auto;
+				width: auto;
+				z-index: 1;
+				padding: 10px;
+				background: white;
+			}
+		</style>
+	</head>
+	
+	<body unresolved>
+		<test-element>
+			<div>Content from light dom. paper-drawer-panel's drawer often unusable, i. e. it cannot be swiped open.</div>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec accumsan magna. Aenean venenatis eu ante vitae convallis. Sed nisl urna, interdum quis tellus vitae, fermentum interdum dui. Quisque id odio lacinia eros suscipit pretium. Proin tempus dolor ut turpis ornare, nec maximus risus dapibus. Suspendisse potenti. Suspendisse eu ullamcorper felis. Duis enim eros, varius sit amet ullamcorper a, luctus at metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean nisi nulla, pretium vel rutrum in, eleifend nec lacus.</p>
+			<p>Fusce ornare vestibulum sem, eu dictum purus interdum vel. Aenean facilisis rutrum orci eget aliquam. Duis quis maximus mauris. Sed placerat tincidunt felis sed fermentum. Nullam at volutpat velit, sed venenatis felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo augue, dapibus eu justo non, rutrum semper tellus. Vestibulum id augue mattis, pharetra nisl sed, volutpat eros. Sed in turpis fermentum, volutpat ex eget, placerat ex. Ut risus massa, vulputate non volutpat eu, rhoncus ac quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi scelerisque nulla tellus, eget interdum metus laoreet eget. Curabitur cursus molestie neque eget volutpat. Cras vel elit urna.</p>
+			<p>Suspendisse ornare, nunc cursus volutpat condimentum, magna lorem iaculis sapien, sit amet posuere mi tortor sit amet enim. Cras mollis est et dui interdum, nec posuere dui tempus. In non vulputate nunc. Proin sit amet nulla nec elit euismod posuere. Integer tincidunt finibus egestas. Phasellus a arcu tristique dolor convallis porttitor. Nunc quis scelerisque quam, nec rutrum justo.</p>
+			<p>Maecenas tristique nisi id tellus tincidunt, vitae lobortis ipsum vehicula. Nulla eu iaculis sapien. Vivamus congue metus a felis venenatis sollicitudin. Pellentesque porttitor, erat vitae cursus blandit, leo dolor dignissim enim, a convallis turpis ante ut orci. Suspendisse id tellus non odio imperdiet consectetur. Nulla lacinia mollis convallis. Integer eleifend ligula vitae diam imperdiet, in viverra odio egestas. Suspendisse viverra pellentesque ex, ac eleifend nunc eleifend non. Morbi aliquet lobortis erat sit amet sagittis. Nullam maximus eros suscipit tortor accumsan, eu maximus nibh lacinia. Nulla at enim id enim vehicula commodo. Vivamus laoreet lobortis egestas. Ut ligula sapien, posuere et orci vestibulum, gravida tempor magna. Aenean in mauris pharetra, volutpat leo et, volutpat lacus.</p>
+		</test-element>
+
+		<div id="refresh">
+			<a href="javascript:window.location.reload(true)">refresh</a>
+		</div>
+	</body>
+</html>
+

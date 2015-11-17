@@ -1,0 +1,36 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../../paper-drawer-panel/paper-drawer-panel.html">
+
+<dom-module id="test-element">
+	<template>
+		<style>
+			.shadowContent {
+				background: #8f8;
+				min-height: 200px;
+			}
+			
+			.lightContent {
+				background: #f88;
+				min-height: 200px;
+			}
+		</style>
+	
+		<paper-drawer-panel>
+			<div drawer>drawer panel</div>
+			<div main>
+				<div class="shadowContent">
+					Content from shadow/shady dom. paper-drawer-panel usable. 
+					Environment: iOS 9.1, Mobile Safari, page saved to home screen ("as app"), page started from home screen. 
+					Ran on actual iPhone 6 device, not in simulator.
+				</div>
+				<div class="lightContent"><content></content></div>
+			</div>
+		</paper-drawer-panel>
+	</template>
+
+	<script>
+		Polymer({
+			is: "test-element",
+		});
+	</script>
+</dom-module>
